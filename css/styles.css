@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #252525;
+    font-family: "Roboto", sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #f9f9f9; /* Adiciona um fundo claro para o conteúdo */
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    color: #333; /* Muda a cor do título para um tom mais suave */
+}
+
+p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+    margin-bottom: 30px; /* Reduz o espaçamento entre parágrafos */
+    font-weight: 300; /* Adiciona um efeito de letra mais escura */
+    text-align: justify; /* Ajusta o texto para alinhamento justificado */
+    letter-spacing: 0.5; /* Adiciona um espaçamento entre letras */
+}
+
+hr {
+    border-radius: 2px;
+    border: none;
+    height: 1px;
+    background-color: #e403f4;
+    margin: 30px 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p { /* Reduz o espaçamento entre parágrafos */
+    font-size: 16px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module.parallax h1 {
+    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
+    font-size: 48px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #ccc; /* Muda a cor do título para um tom mais claro */
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1); 
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Adiciona um efeito de sombra para enfatizar o texto */
+}
+
+section.module.parallax h2 {
+    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
+    font-size: 24px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #ccc; /* Muda a cor do título para um tom mais claro */  
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Adiciona um efeito de sombra para enfatizar o texto */
+}
+
+section.module.parallax h3 {
+    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
+    font-size: 48px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #ccc; /* Muda a cor do título para um tom mais claro */
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1); 
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;/* Adiciona um efeito de sombra para enfatizar o texto */
+}
+
+section.module.parallax p {
+    margin-top: 90px;
+    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
+    font-size: 24px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #ccc; /* Muda a cor do título para um tom mais claro */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1); 
+    position: absolute;
+    margin-left: 480px;/* Adiciona um efeito de sombra para enfatizar o texto */
+}
+
+section.module h2 { /* Ajusta o espaçamento para uniformidade */
+    font-size: 28px; /* Leve redução no tamanho da fonte para harmonizar com o h1 */
+    color: #cccccc;
+    font-weight: 600;
+    text-align: left; /* Tom intermediário para diferenciar do h1 */
+}
+
+section.module.content {
+    padding: 30px 0; /* Reduz o padding para dar mais espaço na tela */
+    background: #1A1A1A;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 90%, #000 100%);
+    /* Ajusta o gradiente para uma transição mais suave */
+}
+
+section.module.parallax-1 {
+    background-image: url('https://i.pinimg.com/originals/56/ad/2c/56ad2c43bf5021957a57547eb7baad9b.gif');
+    /* Mantém o background já definido */
+}
+
+section.module.parallax-2 {
+    background-image: url('https://i.pinimg.com/originals/cb/e0/eb/cbe0eb9368942800223b51657c258576.gif');
+    /* Pronto para adicionar outro parallax aqui */
+}
