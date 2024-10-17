@@ -144,7 +144,7 @@
 /* Para telas menores que 768px (tablets e abaixo) */
 @media (max-width: 48em) { /* 768px = 48em */
     .layout-container {
-        width: 90%; /* Ajusta a largura para se adaptar melhor à tela */
+        width: 100%; /* Ajusta a largura para se adaptar melhor à tela */
         margin-bottom: 80px;
     }
 
@@ -173,7 +173,7 @@
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 30em) { /* 480px = 30em */
     .layout-container {
-        width: 80%; /* Ocupa toda a largura disponível */
+        width: 100%; /* Ocupa toda a largura disponível */
         margin-bottom: 60px;
     }
 
