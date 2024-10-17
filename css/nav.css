@@ -1,7 +1,7 @@
 /* Estilo para o nav */
 nav {
     background-color: #252525;
-    padding: 15px;
+    padding: 0.9375em; /* 15px = 15/16 = 0.9375em */
 }
 
 /* Estilo para a lista */
@@ -15,24 +15,24 @@ nav ul {
 
 /* Estilo para os itens da lista */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 0.9375em; /* 15px = 15/16 = 0.9375em */
 }
 
 /* Estilo para os links */
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em; /* 16px = 16/16 = 1em */
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center; /* Alinha o texto com o ícone */
-    padding: 10px;
+    padding: 0.625em; /* 10px = 10/16 = 0.625em */
     transition: color 0.3s;
 }
 
 /* Espaçamento entre o ícone e o texto */
 nav ul li a i {
-    margin-right: 8px;
+    margin-right: 0.5em; /* 8px = 8/16 = 0.5em */
 }
 
 /* Estilo hover para os links */
@@ -40,6 +40,87 @@ nav ul li a:hover {
     color: #e403f4; /* Cor de destaque ao passar o mouse */
 }
 
+/* Definindo o scroll suave */
 html {
     scroll-behavior: smooth;
-  }
+}
+
+/* ============================= */
+/* Estilos para dispositivos menores */
+
+/* Para telas menores que 768px (tablets e abaixo) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Empilhar os itens verticalmente */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0; /* Espaçamento entre os itens na vertical */
+    }
+
+    nav ul li a {
+        font-size: 1.25em; /* Aumentar um pouco o tamanho da fonte para facilitar o toque */
+        padding: 0.75em; /* Ajustar o espaçamento do link */
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0; /* Reduzir a margem para otimizar o espaço */
+    }
+
+    nav ul li a {
+        font-size: 1.125em; /* Um pouco menor em telas muito pequenas */
+        padding: 0.625em; /* Ajuste do espaçamento interno */
+    }
+}
+
+/* Alternativa: Menu tipo "hambúrguer" */
+
+/* Exibir o menu hambúrguer apenas em telas menores que 768px */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Quando a tela for menor que 768px */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Exibir o ícone do menu */
+        text-align: right;
+        padding-right: 1em;
+    }
+
+    nav ul {
+        display: none; /* Esconde o menu inicialmente */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #252525;
+    }
+
+    nav ul.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+        text-align: center;
+    }
+}
+
+/* Transição suave ao abrir o menu */
+nav ul {
+    transition: all 0.3s ease-in-out;
+}

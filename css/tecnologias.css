@@ -140,3 +140,70 @@
     background-color: #ccc;
     transform: translateX(-50%) rotate(45deg);
 }
+
+/* Para telas menores que 768px (tablets e abaixo) */
+@media (max-width: 48em) { /* 768px = 48em */
+    .layout-container {
+        width: 90%; /* Ajusta a largura para se adaptar melhor à tela */
+        margin-bottom: 80px;
+    }
+
+    .container-experience {
+        max-width: 90%; /* Aumenta a responsividade */
+        height: auto; /* Permite que a altura seja dinâmica */
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .skill-box .title {
+        font-size: 12px; /* Reduz o tamanho do texto */
+    }
+
+    .skill-box .skill-bar {
+        height: 6px; /* Diminui a altura da barra */
+    }
+
+    .skill-per .tooltip {
+        font-size: 8px; /* Ajusta o tamanho da fonte na tooltip */
+        right: -10px;
+        top: -24px;
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 30em) { /* 480px = 30em */
+    .layout-container {
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin-bottom: 60px;
+    }
+
+    .container-experience {
+        padding: 10px;
+        border-radius: 10px; /* Reduz o raio para um layout mais simples */
+        box-shadow: none; /* Remove a sombra para evitar poluição visual */
+    }
+
+    .skill-box {
+        margin: 20px 0;
+    }
+
+    .skill-box .title {
+        font-size: 10px;
+    }
+
+    .skill-box .skill-bar {
+        height: 5px;
+    }
+
+    .skill-per .tooltip {
+        font-size: 7px;
+        padding: 1px 4px;
+        right: -8px;
+        top: -20px;
+    }
+
+    .tooltip::before {
+        height: 8px;
+        width: 8px;
+    }
+}

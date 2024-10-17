@@ -72,3 +72,62 @@ img .layout-container {
     margin-top: 10px; /* Ajustado o espaçamento superior */
     color: #bbbbbb;
 }
+
+/* Para telas menores que 768px (tablets e abaixo) */
+@media (max-width: 48em) { /* 768px = 48em */
+    .container-left {
+        height: auto; /* Deixa a altura adaptável */
+        max-width: 90%; /* Reduz a largura máxima */
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .container-inside {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center;
+        max-height: none;
+        padding: 15px;
+    }
+
+    .container-inside img {
+        width: 150px; 
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .info h2 {
+        font-size: 20px; /* Ajusta o tamanho do título */
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 16px; /* Reduz a fonte para telas menores */
+        text-align: center;
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 30em) { /* 480px = 30em */
+    .container-left {
+        max-width: 100%; /* Ocupa toda a largura da tela */
+        box-shadow: none; /* Remove sombra para simplificar */
+    }
+
+    .container-inside {
+        padding: 10px;
+    }
+
+    .container-inside img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info h2 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+}
