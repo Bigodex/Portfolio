@@ -206,3 +206,62 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+
+    p {
+        font-size: 14px; /* Diminui o tamanho da fonte */
+        margin-bottom: 15px; /* Ajusta o espaçamento entre parágrafos */
+    }
+
+    .wrapper {
+        width: 100%; /* Reduz as margens laterais */
+    }
+
+    .container {
+        max-width: 100%; /* Faz o container ocupar toda a tela */
+    }
+
+    section.module.parallax h1 {
+        font-size: 36px; /* Ajusta o tamanho do título no parallax */
+        margin-top: -50px;
+    }
+
+    section.module.parallax h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    section.module.parallax h3 {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    section.module.parallax {
+        height: 100vh; /* Reduz a altura do parallax */
+    }
+
+    .container-do-titulo {
+        max-width: 80%;
+        height: 100px; /* Permite o ajuste de altura automática */
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block; /* Exibe o menu hambúrguer em telas menores */
+    }
+
+    nav ul {
+        display: none; /* Oculta o menu por padrão */
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column; /* Empilha os itens verticalmente */
+    }
+}

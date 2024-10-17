@@ -175,17 +175,19 @@
     .layout-container {
         width: 100%; /* Ocupa toda a largura disponível */
         margin-bottom: 60px;
+        height: 750px;
     }
 
     .container-experience {
         padding: 10px;
         border-radius: 10px; /* Reduz o raio para um layout mais simples */
         box-shadow: none;
-        width: 25%; /* Remove a sombra para evitar poluição visual */
+        width: 30%;
+        height: 100%; /* Remove a sombra para evitar poluição visual */
     }
 
     .container-experience h2 {
-        font-size: 5px; /* Aumenta o tamanho do título */
+        font-size: 12px; /* Aumenta o tamanho do título */
         margin-bottom: 10px;
     }
 

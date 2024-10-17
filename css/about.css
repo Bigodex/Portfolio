@@ -97,6 +97,13 @@ img .layout-container {
         margin-bottom: 15px;
     }
 
+    .container-inside img {
+        width: 150px; 
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
     .info h2 {
         font-size: 20px; /* Ajusta o tamanho do título */
         text-align: center;
@@ -126,13 +133,13 @@ img .layout-container {
     }
 
     .info h2 {
-        font-size: 16px;
-        text-align: left;
+        font-size: 20px;
+        text-align: center;
     }
 
     .info p {
-        font-size: 12px;
-        text-align: left;
+        font-size: 14px;
+        text-align: center;
         align-items: center;
     }
 }
