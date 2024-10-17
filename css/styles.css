@@ -5,22 +5,34 @@ body {
     font-family: "Roboto", sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    background-color: #f9f9f9; /* Adiciona um fundo claro para o conteúdo */
+    background-color: #f9f9f9;
+    /* Adiciona um fundo claro para o conteúdo */
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 900;
-    color: #333; /* Muda a cor do título para um tom mais suave */
+    color: #333;
+    /* Muda a cor do título para um tom mais suave */
 }
 
 p {
     color: #ccc;
     font-size: 16px;
-    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
-    margin-bottom: 30px; /* Reduz o espaçamento entre parágrafos */
-    font-weight: 300; /* Adiciona um efeito de letra mais escura */
-    text-align: justify; /* Ajusta o texto para alinhamento justificado */
-    letter-spacing: 0.5; /* Adiciona um espaçamento entre letras */
+    line-height: 1.6;
+    /* Melhora o espaçamento entre as linhas */
+    margin-bottom: 30px;
+    /* Reduz o espaçamento entre parágrafos */
+    font-weight: 300;
+    /* Adiciona um efeito de letra mais escura */
+    text-align: justify;
+    /* Ajusta o texto para alinhamento justificado */
+    letter-spacing: 0.5;
+    /* Adiciona um espaçamento entre letras */
 }
 
 hr {
@@ -48,9 +60,12 @@ main {
     padding: 0 20px;
 }
 
-section.module p { /* Reduz o espaçamento entre parágrafos */
-    font-size: 16px; /* Ajusta o tamanho da fonte para melhor legibilidade */
-    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+section.module p {
+    /* Reduz o espaçamento entre parágrafos */
+    font-size: 16px;
+    /* Ajusta o tamanho da fonte para melhor legibilidade */
+    line-height: 1.6;
+    /* Melhora o espaçamento entre as linhas */
 }
 
 section.module:last-child {
@@ -59,64 +74,82 @@ section.module:last-child {
 
 section.module.parallax h1 {
     margin-left: 50px;
-    font-size: 48px;
+    font-size: 72px;
     color: #ccc;
     text-shadow: 5px 5px 10px 10px rgba(228, 3, 244, 1);
     font-family: "Voga";
     font-weight: 600;
     margin: 0 auto;
-    margin-top: -200px; /* Ajuste para mover o título mais para cima */
+    margin-top: -200px;
+    /* Ajuste para mover o título mais para cima */
     margin-bottom: 20px;
 }
 
 
 section.module.parallax h2 {
-    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
-    font-size: 24px; /* Aumenta o tamanho da fonte para melhor legibilidade */
-    color: #ccc; /* Muda a cor do título para um tom mais claro */  
+    margin-left: 20px;
+    /* Ajusta o espaçamento para uniformidade */
+    font-size: 24px;
+    /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #ccc;
+    /* Muda a cor do título para um tom mais claro */
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     margin: 0 auto;
     margin-bottom: 20px;
-    margin-top: 20px; /* Adiciona um efeito de sombra para enfatizar o texto */
+    margin-top: 20px;
+    /* Adiciona um efeito de sombra para enfatizar o texto */
 }
 
 section.module.parallax h3 {
-    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
-    font-size: 48px; /* Aumenta o tamanho da fonte para melhor legibilidade */
-    color: #ccc; /* Muda a cor do título para um tom mais claro */
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1); 
+    margin-left: 20px;
+    /* Ajusta o espaçamento para uniformidade */
+    font-size: 48px;
+    /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #ccc;
+    /* Muda a cor do título para um tom mais claro */
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1);
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     text-align: center;
-    margin-top: 160px;/* Adiciona um efeito de sombra para enfatizar o texto */
+    margin-top: 160px;
+    /* Adiciona um efeito de sombra para enfatizar o texto */
 }
 
 section.module.parallax {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100%; /* Certifique-se de que o elemento pai tenha altura definida */
-    position: relative; /* Define o posicionamento relativo */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100%;
+    /* Certifique-se de que o elemento pai tenha altura definida */
+    position: relative;
+    /* Define o posicionamento relativo */
 }
 
 section.module.parallax p {
-    margin: 0; /* Remove as margens */
+    margin: 0;
+    /* Remove as margens */
     font-size: 24px;
     color: #ccc;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 
-section.module h2 { /* Ajusta o espaçamento para uniformidade */
-    font-size: 28px; /* Leve redução no tamanho da fonte para harmonizar com o h1 */
+section.module h2 {
+    /* Ajusta o espaçamento para uniformidade */
+    font-size: 28px;
+    /* Leve redução no tamanho da fonte para harmonizar com o h1 */
     color: #cccccc;
     font-weight: 600;
-    text-align: left; /* Tom intermediário para diferenciar do h1 */
+    text-align: left;
+    /* Tom intermediário para diferenciar do h1 */
 }
 
 section.module.content {
-    padding: 30px 0; /* Reduz o padding para dar mais espaço na tela */
+    padding: 30px 0;
+    /* Reduz o padding para dar mais espaço na tela */
     background: #1A1A1A;
 }
 
@@ -172,48 +205,4 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: center;
-}
-
-/* Estilo para telas menores que 768px (tablets e abaixo) */
-@media (max-width: 48em) { /* 768px = 48em */
-    .hamburger {
-        display: block; /* Exibe o ícone do menu */
-        font-size: 1.5em; /* Ajuste do tamanho do ícone */
-        color: white;
-        cursor: pointer;
-        text-align: right;
-        padding-right: 1em;
-    }
-
-    nav ul {
-        display: none; /* Oculta o menu inicialmente */
-        flex-direction: column; /* Itens empilhados na vertical */
-        align-items: center;
-        position: absolute;
-        top: 100%; /* Alinha abaixo do nav */
-        right: 0;
-        width: 100%;
-        background-color: #252525;
-    }
-
-    nav ul.active {
-        display: flex; /* Mostra o menu ao ativar */
-    }
-
-    nav ul li {
-        margin: 0.5em 0; /* Espaçamento entre os itens */
-    }
-
-    nav ul li a {
-        font-size: 1.25em; /* Aumenta o tamanho para melhor toque */
-        padding: 0.75em; /* Ajusta o padding */
-    }
-}
-
-/* Estilo para telas menores que 480px (smartphones) */
-@media (max-width: 30em) { /* 480px = 30em */
-    nav ul li a {
-        font-size: 1.125em; /* Ajusta o tamanho para telas menores */
-        padding: 0.625em;
-    }
 }

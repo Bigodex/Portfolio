@@ -173,14 +173,20 @@
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 30em) { /* 480px = 30em */
     .layout-container {
-        width: 100%; /* Ocupa toda a largura disponível */
+        width: 80%; /* Ocupa toda a largura disponível */
         margin-bottom: 60px;
     }
 
     .container-experience {
         padding: 10px;
         border-radius: 10px; /* Reduz o raio para um layout mais simples */
-        box-shadow: none; /* Remove a sombra para evitar poluição visual */
+        box-shadow: none;
+        width: 25%; /* Remove a sombra para evitar poluição visual */
+    }
+
+    .container-experience h2 {
+        font-size: 5px; /* Aumenta o tamanho do título */
+        margin-bottom: 10px;
     }
 
     .skill-box {

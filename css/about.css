@@ -77,7 +77,7 @@ img .layout-container {
 @media (max-width: 48em) { /* 768px = 48em */
     .container-left {
         height: auto; /* Deixa a altura adaptável */
-        max-width: 90%; /* Reduz a largura máxima */
+        max-width: 80%; /* Reduz a largura máxima */
         padding: 15px;
         margin: 20px auto;
     }
@@ -87,6 +87,7 @@ img .layout-container {
         align-items: center;
         max-height: none;
         padding: 15px;
+        width: 80%;
     }
 
     .container-inside img {
@@ -110,12 +111,13 @@ img .layout-container {
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 30em) { /* 480px = 30em */
     .container-left {
-        max-width: 100%; /* Ocupa toda a largura da tela */
+        max-width: 80%; /* Ocupa toda a largura da tela */
         box-shadow: none; /* Remove sombra para simplificar */
     }
 
     .container-inside {
         padding: 10px;
+        width: 80%;
     }
 
     .container-inside img {
@@ -124,10 +126,13 @@ img .layout-container {
     }
 
     .info h2 {
-        font-size: 18px;
+        font-size: 16px;
+        text-align: left;
     }
 
     .info p {
-        font-size: 14px;
+        font-size: 12px;
+        text-align: left;
+        align-items: center;
     }
 }
