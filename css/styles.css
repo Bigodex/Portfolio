@@ -58,15 +58,17 @@ section.module:last-child {
 }
 
 section.module.parallax h1 {
-    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
-    font-size: 48px; /* Aumenta o tamanho da fonte para melhor legibilidade */
-    color: #ccc; /* Muda a cor do título para um tom mais claro */
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1); 
-    font-family: "Roboto", sans-serif;
+    margin-left: 50px;
+    font-size: 48px;
+    color: #ccc;
+    text-shadow: 5px 5px 10px 10px rgba(228, 3, 244, 1);
+    font-family: "Voga";
     font-weight: 600;
     margin: 0 auto;
-    margin-bottom: 20px; /* Adiciona um efeito de sombra para enfatizar o texto */
+    margin-top: -200px; /* Ajuste para mover o título mais para cima */
+    margin-bottom: 20px;
 }
+
 
 section.module.parallax h2 {
     margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
@@ -85,18 +87,26 @@ section.module.parallax h3 {
     color: #ccc; /* Muda a cor do título para um tom mais claro */
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 1); 
     font-family: "Roboto", sans-serif;
-    font-weight: 600;/* Adiciona um efeito de sombra para enfatizar o texto */
+    font-weight: 600;
+    text-align: center;
+    margin-top: 160px;/* Adiciona um efeito de sombra para enfatizar o texto */
+}
+
+section.module.parallax {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Certifique-se de que o elemento pai tenha altura definida */
+    position: relative; /* Define o posicionamento relativo */
 }
 
 section.module.parallax p {
-    margin-top: 90px;
-    margin-left: 20px; /* Ajusta o espaçamento para uniformidade */
-    font-size: 24px; /* Aumenta o tamanho da fonte para melhor legibilidade */
-    color: #ccc; /* Muda a cor do título para um tom mais claro */
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1); 
-    position: absolute;
-    margin-left: 480px;/* Adiciona um efeito de sombra para enfatizar o texto */
+    margin: 0; /* Remove as margens */
+    font-size: 24px;
+    color: #ccc;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
+
 
 section.module h2 { /* Ajusta o espaçamento para uniformidade */
     font-size: 28px; /* Leve redução no tamanho da fonte para harmonizar com o h1 */
@@ -145,4 +155,21 @@ section.module.parallax-1 {
 section.module.parallax-2 {
     background-image: url('https://i.pinimg.com/originals/cb/e0/eb/cbe0eb9368942800223b51657c258576.gif');
     /* Pronto para adicionar outro parallax aqui */
+}
+
+.container-do-titulo {
+    width: 100%;
+    max-width: 420px;
+    background-color: #765858;
+    border-radius: 25px;
+    height: 320px;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }

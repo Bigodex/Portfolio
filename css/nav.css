@@ -1,0 +1,45 @@
+/* Estilo para o nav */
+nav {
+    background-color: #252525;
+    padding: 15px;
+}
+
+/* Estilo para a lista */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para os itens da lista */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilo para os links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center; /* Alinha o texto com o ícone */
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+/* Espaçamento entre o ícone e o texto */
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Estilo hover para os links */
+nav ul li a:hover {
+    color: #e403f4; /* Cor de destaque ao passar o mouse */
+}
+
+html {
+    scroll-behavior: smooth;
+  }

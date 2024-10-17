@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,16 +8,27 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/tecnologias.css" />
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/nav.css">
   </head>
   <body>
+    <nav>
+      <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> Sobre</a></li>
+          <li><a href="#tecnologias"><i class="fas fa-laptop-code"></i> Tecnologias</a></li>
+          <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+      </ul>
+  </nav>
+    </nav>
     <div class="wrapper">
       <main>
-        <section class="module parallax parallax-1">
+        <section class="module parallax parallax-1" id="home">
           <h1>Pedro Piola</h1>
           <p>Desenvolvedor Fullstack</p>
         </section>
 
-        <section class="module content">
+        <section class="module content" id="about">
           <div class="container-left">
             <div class="container-inside">
               <img src="assets/img/pixel.jpg" alt="Foto de Perfil" />
@@ -53,7 +64,7 @@
           </div>
         </section>
 
-        <section class="module parallax parallax-2">
+        <section class="module parallax parallax-2" id="tecnologias">
           <h3>Tecnologias</h3>
           <div class="layout-container">
             <div class="container-experience">
@@ -229,11 +240,11 @@
           </div>
         </section>
 
-        <section class="module content">
+        <section class="module content" id="contato">
             <ul class="example-2">
               <li class="icon-content">
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/pedropiola/"
                   aria-label="LinkedIn"
                   data-social="linkedin"
                 >
@@ -256,7 +267,7 @@
                 <div class="tooltip">LinkedIn</div>
               </li>
               <li class="icon-content">
-                <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                <a href="https://github.com/Bigodex" aria-label="GitHub" data-social="github">
                   <div class="filled"></div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +288,7 @@
               </li>
               <li class="icon-content">
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://instagram.com/pedrobigodi"
                   aria-label="Instagram"
                   data-social="instagram"
                 >
@@ -299,30 +310,12 @@
                 </a>
                 <div class="tooltip">Instagram</div>
               </li>
-              <li class="icon-content">
-                <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
-                  <div class="filled"></div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-youtube"
-                    viewBox="0 0 16 16"
-                    xml:space="preserve"
-                  >
-                    <path
-                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </a>
-                <div class="tooltip">Youtube</div>
-              </li>
             </ul>
-            
         </section>
       </main>
     </div>
+    <footer>
+      <p>&copy; 2024 Pedro Bigodi. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
