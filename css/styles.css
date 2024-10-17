@@ -238,7 +238,7 @@ footer {
     }
 
     section.module.parallax {
-        height: 100vh; /* Reduz a altura do parallax */
+        height: 50vh; /* Reduz a altura do parallax */
     }
 
     .container-do-titulo {
